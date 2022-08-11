@@ -1,0 +1,135 @@
+/*
+Guia de Stilos o Style guide
+0. Reiniciar
+1. Layout
+2. Generic Items
+3. Partes de la Web
+4. Tabla
+5. Footer
+
+--------------------------
+https://paletadecolores.online/
+Color1==> #F40009
+color2==> #FFCC00
+color3==> #F8A350
+color4==> #fff
+
+*/
+
+/* 0. Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Layout */
+body{ text-align: center; font: 300 20px/1.7 'Roboto Condensed';}
+.header{ display: flex; justify-content: center; align-items: center;}
+.navbar {display: flex; justify-content: center; align-items:center ;}
+.tarifas {text-align: left;}
+.list-services {display: flex; align-items: center; justify-content: center;}
+.list-services figure { display: flex; justify-content: center; align-items: center; flex-flow: column;}
+
+
+/* 2. Generic Items */
+.header {height: 550px; background: url(../img/Cover.jpg) no-repeat center top ; background-size: cover;}
+.navbar {height: 63px; background:#1E1E1E; border-bottom: 1px dashed #fff;}
+.navbar a {color:#fff; padding: 0 20px; text-decoration:none; text-transform: uppercase; font: 30px 'Stint Ultra Condensed'; }
+.title {margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;  }
+.cabecera  {margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase; color:#fff ; }
+p {margin-bottom: 40px;}
+
+/* 3. Partes de la Web */
+.container { padding: 80px 0; }
+.who {background: #F40009; color:#fff ;}
+.who p {max-width: 1055px; margin: 0 auto;}
+.btn {    background-color:  #F40009; /* Coke*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+	border-radius: 12px;}
+
+.services {background: #FFCC00; color:#fff ;}
+.services p {max-width: 1055px; margin: 0 auto;}
+.contain { max-width: 1055px; margin: 0 auto;}
+/*.tarifas {background: url(../img/fondo-taxes.jpg) no-repeat center top; background-size: cover; color: #fff;}*/
+.tarifas{background: #F8A350; color:#fff ;}
+.tarifas p {max-width: 450px;}
+/* 4. Tabla */
+.planes {
+    width: 100%;
+    margin-left: 0;
+ }  
+   
+  
+
+
+.planes td {
+   
+    padding: 0.5em; 
+    font-size: 1.5em;
+   width: 20%;
+    /*padding: 1.5em;*/
+    /* border: 1px solid #000; */
+}
+
+
+.planes img{
+    width: 60%;
+    border: solid none;
+}
+
+/*5. Footer*/
+footer {
+	text-align: center;
+	color: #fff;
+	padding: 25px 0;
+	background: #FFCC00;
+  }
+  footer .copyright {
+	margin-bottom: 0.3rem;
+  }
